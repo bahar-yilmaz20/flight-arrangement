@@ -1,0 +1,31 @@
+<changeSet id="20092025-create-airport" author="byilmaz">
+    <createTable tableName="airports">
+        <column name="id" type="int">
+            <constraints primaryKey="true"/>
+        </column>
+        <column name="airport_name" type="varchar(250)">
+            <constraints nullable="false"/>
+        </column>
+        <column name="airport_code" type="varchar(5)">
+            <constraints nullable="false"/>
+        </column>
+        <column name="country_code" type="varchar(5)">
+            <constraints nullable="false"/>
+        </column>
+        <column name="city" type="varchar(50)">
+            <constraints nullable="false"/>
+        </column>
+        <column name="created_at" type="DATETIME">
+            <constraints nullable="false"/>
+        </column>
+        <column name="updated_at" type="DATETIME">
+            <constraints nullable="true"/>
+        </column>
+        <column name="updated_by" type="DATETIME">
+            <constraints nullable="true"/>
+        </column>
+        <column name="created_by" type="DATETIME">
+            <constraints nullable="true"/>
+        </column>
+    </createTable>
+</changeSet>

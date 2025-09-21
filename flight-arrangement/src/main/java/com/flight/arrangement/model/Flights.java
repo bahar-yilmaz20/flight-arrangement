@@ -1,8 +1,14 @@
 package com.flight.arrangement.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+@Entity
 @Table(name="flights")
 public class Flights {
+    @Id
+    private Long id;
+
 
 }
